@@ -6,4 +6,6 @@ created by,
 - Nikunj Tyagi
 
 
-[**Dataset**](https://www.kaggle.com/datasets/denizkavi1/brain-tumor)
+**Dataset**
+- [Healthy](https://brain-development.org/ixi-dataset/)
+- [Tumor](https://www.kaggle.com/datasets/denizkavi1/brain-tumor)
