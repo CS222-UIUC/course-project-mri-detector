@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Storage</title>
+	<style>
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			list-style: none;
+			padding: 0;
+		}
+		li {
+			margin: 10px;
+			text-align: center;
+		}
+		img {
+			max-width: 200px;
+			max-height: 200px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Stored Images</h1>
+	<ul>
+		{% for link in links %}
+			<li>
+				<img src="{{ link }}" alt="image">
+				<p><a href="{{ link }}">{{ link }}</a></p>
+			</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>
