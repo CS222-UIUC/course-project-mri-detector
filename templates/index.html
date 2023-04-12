@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html> 
-<head> 
-    <title>Uploading & Reading CSV file</title>
-</head> 
-<body> 
-    <b> MRI Tumor Detector </b>
-    <p> try uploading a csv file </p>
-    <form method = "POST" enctype="multipart/form-data" action = "/">   
-        <input type="file" name="file" accept=".csv">
-        <input type = "submit" value="Upload"> 
-    </form>
-    <p style="color:blue;">Choose csv file to upload</p>
-  <form action="/show_data" target="_blank">
-        <input type="submit" value="Show CSV"/>
-    </form>
-</body> 
+<html>
+<head>
+	<title>Brain MRI Scan</title>
+	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		}
+		input[type="file"] {
+			margin-bottom: 20px;
+		}
+		button {
+			padding: 10px 20px;
+			background-color: #0099ff;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		button:hover {
+			background-color: #0066cc;
+		}
+		.center {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<img src="/static/brain.jpg" alt="Brain" width="300" height="300" class="center">
+	<form action="/upload" method="POST" enctype="multipart/form-data">
+		<input type="file" name="file">
+		<button type="submit">Upload</button>
+	</form>
+	<a href="/storage"><button>View Stored Images</button></a>
+</body>
 </html>
