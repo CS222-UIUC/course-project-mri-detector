@@ -3,7 +3,7 @@ created by,
 - Gloria Wang, role: Prepared data, trained vision transformer model, and used model for prediction.
 - Kyler Yu, role:
 - Owen Shi, role:
-- Nikunj Tyagi, role: Trained PyTorch convolutional model, worked on shading tumors red, started frontend creation
+- Nikunj Tyagi, role: Trained PyTorch convolutional model, worked on shading tumors red, started frontend
 
 ## Introduction
 We perform image classification for brain tumors, specifically for glioma cancer, using a Vision Transformer (ViT) model trained from scratch and implemented via PyTorch. We trained our model on a manually constructed dataset of size 1091, combined from two separate datasets: the IXI dataset for healthy brain scans and a PLOS dataset for glioma scans. Our model's hyperparameters are 30 epochs with a 0.001 learning rate and a batch size of 32. We perform predictions by pulling images from a Google Drive folder.
