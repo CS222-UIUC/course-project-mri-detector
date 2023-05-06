@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MRI Brain Tumor Detector</title>
+        <style>
+            body {
+                margin: 0;
+                
+            }
+            .topbar {
+                background-color:rgb(19, 61, 95);
+                padding-left: 25px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                font-family: Garamond, serif;
+            }
+            .h_1 {
+                font-style: italic;
+            }
+            .h_1, .h_2 {
+                display: inline;
+                color: white;
+            }
+            .upload {
+                margin: auto;
+            }
+            .upload_h {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color:rgb(19, 61, 95);
+            }
+            .upload_f {
+                position: absolute;
+                left: 38%;
+            }
+            .mri {
+                margin: auto;
+                width: 50%;
+                border: 3px solid rgb(19, 61, 95);
+                padding: 8px;
+            }
+            .image {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                line-height: 75px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="topbar">
+            <h2 class="h_1">MRI</h2>
+            <h2 class="h_2">Brain Tumor Detector</h2>
+        </div>
+
+        <div class="upload">
+            <h3 class="upload_h">Upload Your MRI Scan</h3>
+            <form class="upload_f" action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="mri">
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="mri">
+            <img class="image" src="/static/plot.png" alt="No MRI Scan Uploaded Yet"/>
+        </div>
+
+        <br>
+        <br>
+
+    </body>
+</html> 
