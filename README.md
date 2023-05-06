@@ -1,8 +1,8 @@
 # CS222: MRI Tumor Detection with Image Classification
 created by,
 - Gloria Wang, role: Prepared data, trained vision transformer model, and used model for prediction.
-- Kyler Yu, role:
-- Owen Shi, role:
+- Kyler Yu, role: Built frontend Flask app and middleware to run user uploaded images through the model and display output
+- Owen Shi, role: Worked on frontend, experimented with different methods of storing/uploading images
 - Nikunj Tyagi, role: Trained PyTorch convolutional model, worked on shading tumors red, started frontend
 
 ## Introduction
@@ -63,3 +63,4 @@ The encoder then combines the patches with the positional embedding vector. Its 
 We use PyTorch and the ViT_PyTorch library by [lucidrains](https://github.com/lucidrains/vit-pytorch) to implement ViT for image classification.
 
 ### Frontend
+We created a Flask app for the frontend. The app allows the user to input an image, which the app then runs through the model checkpoint. The output of the model is then displayed on the app for the user to see.
